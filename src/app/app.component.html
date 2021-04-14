@@ -1,0 +1,7 @@
+<h1 class="head">GUESS THE NUMBER</h1>
+<div class="body">
+  <h3>Guess the number in my mind between 1 to 100</h3>
+  <input [(ngModel)]="userGuess" type="Number" /><br/><br/>
+  <button (click)="checkIt()">Check</button>
+  <h4 *ngIf="result">{{result}}</h4>
+</div>
